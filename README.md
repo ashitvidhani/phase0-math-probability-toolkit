@@ -9,7 +9,6 @@ It converts core mathematics into working software modules for:
 - Optimization
 - Probability distributions
 - Monte Carlo simulation
-- Portfolio risk
 - Bayesian updating
 - Multivariate Gaussian modeling
 - Anomaly detection
