@@ -1,3 +1,4 @@
+```markdown
 # Phase 0 Mathematics + Probability Simulation Toolkit
 
 This project is the Phase 0 capstone for my Super Roadmap.
@@ -9,6 +10,7 @@ It converts core mathematics into working software modules for:
 - Optimization
 - Probability distributions
 - Monte Carlo simulation
+- Portfolio risk
 - Bayesian updating
 - Multivariate Gaussian modeling
 - Anomaly detection
@@ -39,6 +41,8 @@ This project acts as the first mathematical engine that will later merge into:
 - `multivariate_gaussian.py`
 
 ## How to Run
+
+Run the main project entry point:
 
 ```bash
 python3 main.py
