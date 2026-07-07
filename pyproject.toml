@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phase0-math-probability-toolkit"
+version = "0.1.0"
+description = "Phase 0 Mathematics and Probability Simulation Toolkit for linear algebra, decompositions, optimization, probability, Monte Carlo simulation, portfolio risk, Bayesian updating, and anomaly detection."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Ashit Vidhani" }
+]
+keywords = [
+  "mathematics",
+  "probability",
+  "linear-algebra",
+  "monte-carlo",
+  "portfolio-risk",
+  "bayesian-updating",
+  "anomaly-detection",
+  "quantitative-finance"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Information Analysis"
+]
+
+dependencies = [
+  "numpy",
+  "scipy",
+  "pandas",
+  "matplotlib"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov",
+  "coverage",
+  "hypothesis"
+]
+
+[tool.setuptools.packages.find]
+include = ["math_toolkit*"]
+
+[tool.coverage.run]
+source = ["math_toolkit"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+fail_under = 80
