@@ -175,7 +175,7 @@ def normal_pdf(
         PDF is density, not direct probability at a point.
     """
 
-    if standard_deviation < 0:
+    if standard_deviation <= 0:
         raise ValueError("Standard Deviation must be positive.")
     
     z = (x - mean)/ standard_deviation
